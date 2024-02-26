@@ -16,7 +16,7 @@
     4.将数据渲染到这个视图上
     -->
   <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-    <property name="prefix" value="WEB-INF/jsp/"></property>
+    <property name="prefix" value="/WEB-INF/jsp/"></property>
     <property name="suffix" value=".jsp"></property>
   </bean>
 
