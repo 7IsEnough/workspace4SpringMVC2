@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.clearlove.dao.BookMapper">
+
+
+  <insert id="addBook" parameterType="com.clearlove.pojo.Books">
+    INSERT INTO ssmbuild.books
+      (bookName, bookCounts, detail)
+    VALUES(#{bookName},#{bookCounts},#{detail});
+  </insert>
+  <update id="updateBook" parameterType="com.clearlove.pojo.Books">
+    update ssmbuild.books
+    set bookName=#{bookName},bookCounts=#{bookCounts},detail=#{detail}
+    where bookID = #{bookID}
+  </update>
+
+  <delete id="deleteBookById" parameterType="int">
+    delete from ssmbulid.books where bookID = #{bookId}
+  </delete>
+  <select id="queryBookById" resultType="com.clearlove.pojo.Books">
+    select * from ssmbuild.books where bookID = #{bookId}
+  </select>
+  <select id="queryAllBook" resultType="com.clearlove.pojo.Books">
+    select * from ssmbuild.books
+  </select>
+</mapper>
