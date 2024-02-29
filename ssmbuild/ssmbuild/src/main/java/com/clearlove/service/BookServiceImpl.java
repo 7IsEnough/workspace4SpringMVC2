@@ -3,11 +3,13 @@ package com.clearlove.service;
 import com.clearlove.dao.BookMapper;
 import com.clearlove.pojo.Books;
 import java.util.List;
+import org.springframework.stereotype.Service;
 
 /**
  * @author promise
  * @date 2024/2/29 - 0:09
  */
+//@Service
 public class BookServiceImpl implements BookService{
 
   // service调用dao
