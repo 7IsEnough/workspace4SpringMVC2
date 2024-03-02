@@ -13,8 +13,8 @@
     <package name="com.clearlove.pojo"/>
   </typeAliases>
 
-  <mappers>
-    <mapper class="com.clearlove.dao.BookMapper"/>
-  </mappers>
+<!--  <mappers>-->
+<!--    <mapper class="com.clearlove.dao.BookMapper"/>-->
+<!--  </mappers>-->
 
 </configuration>
