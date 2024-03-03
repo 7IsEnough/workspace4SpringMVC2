@@ -19,12 +19,15 @@
   </update>
 
   <delete id="deleteBookById" parameterType="int">
-    delete from ssmbulid.books where bookID = #{bookId}
+    delete from books where bookID = #{bookId}
   </delete>
   <select id="queryBookById" resultType="com.clearlove.pojo.Books">
     select * from ssmbuild.books where bookID = #{bookId}
   </select>
   <select id="queryAllBook" resultType="com.clearlove.pojo.Books">
     select * from ssmbuild.books
+  </select>
+  <select id="queryBookByName" resultType="com.clearlove.pojo.Books">
+    select * from ssmbuild.books where bookName=#{bookName}
   </select>
 </mapper>

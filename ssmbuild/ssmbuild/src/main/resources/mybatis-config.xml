@@ -6,6 +6,10 @@
 
 <configuration>
 
+  <settings>
+    <setting name="logImpl" value="STDOUT_LOGGING"/>
+  </settings>
+
   <!--配置数据源，交给Spring去做-->
   
   <!--取别名-->
@@ -16,5 +20,6 @@
 <!--  <mappers>-->
 <!--    <mapper class="com.clearlove.dao.BookMapper"/>-->
 <!--  </mappers>-->
+
 
 </configuration>

@@ -38,4 +38,9 @@ public class BookMapperImpl extends SqlSessionDaoSupport implements BookMapper {
   public List<Books> queryAllBook() {
     return null;
   }
+
+  @Override
+  public Books queryBookByName(String bookName) {
+    return null;
+  }
 }
